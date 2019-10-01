@@ -1,8 +1,8 @@
 while True:
     s = input("Enter string")
-    try: s[2]
+    try: s[4]                          # увеличил величину проверки, так ка далле обращаемся к 5-му символу
     except IndexError as error:
-        print('Too short string, 3 chars min')
+        print('Too short string, 5 chars min')
     else: break
 print('Сначала выведите третий символ этой строки. '+s[2],
       'Во второй строке выведите предпоследний символ этой строки. '+s[len(s) - 2],
