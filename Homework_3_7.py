@@ -6,10 +6,8 @@ But at least we are not what we used to be
  (Football Coach)
 """
 # Посчитайте сколько слов в тексте (разбейте на слова методом строк split)
-words = s.splitlines()
-for word in range(len(words)):
-    words.extend(words[0].strip().split(' '))
-    words.remove(words[0])
+words = s.split()    #переделано на сплит без параметров, документация к методу немножко убогая, не совсем понятно поведение
+print(words)
 print('in text are ', len(words), 'words')
 
 # Удалите знаки препинания в списке слов (пройдитесь циклом все слова и удалите методом strip знаки препинания)
